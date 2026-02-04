@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com');
+
 :root {
 
     --bg-color: #1A0B2E;
@@ -105,45 +107,25 @@ nav ul li {
 
 nav ul li a {
 
-    /* color: var(--text-main);
-
-    font-size: 0.9rem;
-
-    font-weight: 300; */
-
-
-
-
-
     text-decoration: none;
 
     font-family: Plus Jakarta Sans;
 
-    font-weight: 600;
+    /* font-weight: 400; */
 
-    font-style: SemiBold;
+    /* font-style: SemiBold; */
 
-    font-size: 20px;
+    font-size: 16px;
 
     color: #FFFFFF;
 
-    line-height: 100%;
+    /* line-height: 100%; */
 
     letter-spacing: 2%;
 
     text-align: center;
 
     vertical-align: middle;
-
-
-
-
-
-
-
-
-
-
 
 }
 
@@ -188,18 +170,16 @@ nav ul li a {
 .curved-arrow {
 
     position: absolute;
-
-    top: -12px;
-
-    /* left: -1px; */
-
-    /* Positions the arrow between the text and avatar head */
-
-    transform: rotate(-5deg);
-
+    top: -9px;
+    left: -23px;
+    transform: rotate(-7deg);
     opacity: 0.6;
 
 }
+
+
+/* I'm a Software Engineer.| */
+
 
 
 
@@ -219,6 +199,9 @@ nav ul li a {
 
     z-index: 5;
 
+
+
+    /* Ellipse 22 */
 
 
 
@@ -493,7 +476,7 @@ nav ul li a {
 
 
 
-    line-height: 100%;
+    /* line-height: 100%; */
 
     letter-spacing: 2%;
 
@@ -555,9 +538,11 @@ nav ul li a {
 
 .hero-bottom {
 
-    max-width: 600px;
+    max-width: 674px;
 
 }
+
+
 
 
 
@@ -678,412 +663,786 @@ nav ul li a {
 /* Container & Section Spacing */
 
 /* Work Experience */
-
-
-
-
-
+/* Work Experience Section */
 .work-experience {
-
     position: relative;
-
     padding: 100px 15%;
-
+    /* Adjusted padding for better horizontal flow */
     background-color: var(--bg-color);
-
     overflow: hidden;
-
 }
-
-
-
-.container {
-
-    position: relative;
-
-    z-index: 2;
-
-}
-
-
 
 .section-heading {
-
-    /* font-size: 2.5rem;
-
-    font-weight: 400;
-
-    letter-spacing: 1px; */
-
-
-
-
-
     margin-bottom: 50px;
+    /* Matches the clean geometric look */
+    font-weight: 600;
+    font-size: 34px;
+    /* Scaled to match design weight */
+    color: #ffffff;
 
-    font-family: Preahvihear;
+
+
+    /* Work Experience */
+
+    /* position: absolute;
+    width: 353px;
+    height: 72px;
+    left: 468px;
+    top: 1135px; */
+
+    font-family: 'Preahvihear', cursive;
+    font-style: normal;
     font-weight: 400;
-
-    font-style: Regular;
-
     font-size: 40px;
+    line-height: 72px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 0.02em;
 
-    leading-trim: NONE;
-
-    line-height: 100%;
-
-    letter-spacing: 2%;
-
-    vertical-align: middle;
-
-
-
-
-
-
+    color: #FFFFFF;
 
 
 
 }
+
 
 
 
 /* Grid Layout */
-
 .experience-grid {
-
     display: grid;
-
     grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    /* Tighter gap as seen in Figma */
+}
 
-    /* 2 columns */
+.first-card {
+    /* background: RGBA(19, 4, 40, 1);
+    background: linear-gradient(90deg, rgba(19, 4, 40, 1) 0%, rgba(19, 4, 40, 1) 79%, rgba(56, 18, 109, 1) 100%); */
 
-    gap: 30px;
+
+    /* Rectangle 984 */
+
+    /* position: absolute; */
+    /* width: 570px;
+    height: 192.68px; */
+    /* left: 463px;
+    top: 1251px; */
+
+    background: linear-gradient(110.49deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%);
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
 
 
 
 }
+
+
+.second-card {
+    /* Rectangle 983 */
+
+    /* position: absolute; */
+    /* width: 570px;
+    height: 192.68px; */
+    /* left: 1053px;
+    top: 1251px; */
+
+    background: linear-gradient(95.56deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+
+}
+
+.third-card {
+    /* Rectangle 983 */
+
+
+    background: linear-gradient(95.56deg, #130428 0.58%, #251043 16.32%, #38126D 29.33%, #261045 45.66%, #190634 54.44%);
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+
+}
+
+.forth-card {
+    /* Rectangle 983 */
+
+
+    background: linear-gradient(149.88deg, #130428 37.22%, #251043 70.43%, #38126D 97.89%, #261045 132.38%, #190634 150.9%);
+    box-shadow: 4px 7px 26px rgba(0, 0, 0, 0.12);
+    border-radius: 15px;
+
+}
+
+
+
 
 
 
 /* Card Styling */
-
 .experience-card {
-
     display: flex;
-
     align-items: center;
-
-    background: linear-gradient(135deg, rgba(255, 255, 255, 0.05) 0%, rgba(255, 255, 255, 0.01) 100%);
-
-    border: 1px solid #9024F2;
-
+    /* Use a semi-transparent border for that 'soft' design look */
+    border: 1px solid rgba(144, 36, 242, 0.3);
     border-radius: 20px;
-
-    padding: 40px;
-
-    transition: transform 0.3s ease, border-color 0.3s ease;
-
-
-
-    width: 490px;
-
-    height: 182px;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    padding: 30px 40px;
+    /* More horizontal padding for the content */
+    transition: all 0.3s ease;
+    width: auto;
+    /* Let the grid handle the width */
+    max-height: 192.68px;
+    /* Let content + padding define height */
+    min-height: 180px;
 }
-
 
 
 .experience-card:hover {
-
     transform: translateY(-5px);
-
-    border-color: rgba(125, 51, 255, 0.5);
-
-    /* Subtle purple hover */
-
+    /* background: rgba(255, 255, 255, 0.07);
+    border-color: rgba(144, 36, 242, 0.8); */
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.4);
 }
-
-
 
 /* Icon Section */
-
 .card-icon {
+    flex: 0 0 100px;
+    /* Slightly smaller to leave room for text */
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
 
-    flex: 0 0 120px;
 
-    /* Fixed width for the icon area */
 
-    margin-right: 20px;
+    position: relative;
+    /* Needed for positioning the shadow element */
+    display: inline-block;
+    /* ... other styles for your icon ... */
+    z-index: 1;
+
+
 
 }
+
+.card-icon::after {
+
+    content: '';
+    position: absolute;
+    bottom: -20px;
+    /* Position it below the icon */
+    left: 50%;
+    transform: translateX(-50%);
+    width: 100px;
+    /* Adjust size */
+    height: 50px;
+    background: radial-gradient(ellipse at center, #2C1250 0%, #2C1250 19.79%, rgba(44, 18, 80, 0) 90.1%);
+    /* background: linear-gradient(180deg, #361761 0%, #2D1949 19.79%, rgba(44, 18, 80, 0) 90.1%); */
+    /* Purple gradient glow */
+    border-radius: 50%;
+    /* Make it an ellipse */
+
+    /* Soften the edges */
+    z-index: -1;
+    /* Place it behind the icon */
+    /* transform: matrix(-1, 0.05, -0.07, -1, 0, 0); */
+
+
+    /* Ellipse 1 */
+
+    /* position: absolute;
+    width: 111.34px;
+    height: 42.08px;
+    left: 515px;
+    top: 1349.92px;
+
+    background: linear-gradient(180deg, #2C1250 0%, #2C1250 19.79%, rgba(44, 18, 80, 0) 90.1%);
+ */
+
+
+    /* Ellipse 1 */
+
+
+    /* transform: matrix(-1, 0.05, -0.07, -1, 0, 0); */
+
+
+    /* Ellipse 1 */
+
+
+
+
+
+
+
+}
+
+.ellipse01 {
+
+    position: absolute;
+
+
+
+}
+
+.dot {
+    position: absolute;
+    width: 6px;
+    /* Dot size */
+    height: 6px;
+    background-color: white;
+    border-radius: 50%;
+    opacity: 0.9;
+}
+
+/* Positioning the 4 dots relative to the wrapper */
+.first-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.first-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.first-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.first-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+.first-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.first-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.first-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.first-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+
+.third-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.third-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.third-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.third-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+.third-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.third-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.third-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.third-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+
+.second-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.second-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.second-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.second-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+.second-card .dot.top-left {
+    top: 2px;
+    left: 4px;
+    background: #693B93;
+
+}
+
+.second-card .dot.top-right {
+    top: 37px;
+    right: -2px;
+
+}
+
+.second-card .dot.bottom-left {
+    bottom: 20px;
+    left: -9px;
+}
+
+.second-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+
+
+.forth-card .dot.top-left {
+    top: 8px;
+    left: 11px;
+
+    background: #693B93;
+
+
+}
+
+.forth-card .dot.top-right {
+    top: 39px;
+    right: 6px;
+}
+
+.forth-card .dot.bottom-left {
+    bottom: 20px;
+    left: 0px;
+}
+
+.forth-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+.forth-card .dot.top-left {
+    top: 21px;
+    left: 66px;
+    background: #693B93;
+
+}
+
+.forth-card .dot.top-right {
+    top: 37px;
+    right: -2px;
+
+}
+
+.forth-card .dot.bottom-left {
+    bottom: 20px;
+    left: -9px;
+}
+
+.forth-card .dot.bottom-right {
+    bottom: -10px;
+    right: 26px;
+
+    background: #693B93;
+}
+
+
+
+
+
 
 
 
 .card-icon img {
-
-    width: 115px;
-
-    height: 115px;
-
-    opacity: 1;
-
-
-
-    filter: drop-shadow(0 10px 15px rgba(0, 0, 0, 0.5));
-
+    width: 85px;
+    /* Figma icons are proportional, 115px was pushing text too much */
+    height: auto;
+    filter: drop-shadow(0 5px 15px rgba(0, 0, 0, 0.3));
 }
 
 
 
 /* Text Section */
-
-
-
-
-
-
-
 .card-body h3 {
-
-    /* font-size: 1.25rem;
-
-    font-weight: 600; */
-
-    margin-bottom: 10px;
-
-
-
-    font-family: Poppins;
-
+    margin-bottom: 8px;
+    font-family: 'Poppins', sans-serif;
     font-weight: 600;
+    font-size: 24px;
+    line-height: 1.2;
+    color: #ffffff;
 
+
+    /* font-family: Poppins;
+    font-weight: 600;
     font-style: SemiBold;
-
     font-size: 26px;
-
+    leading-trim: NONE;
     line-height: 32.5px;
-
-    letter-spacing: 0%;
-
-
-
-
+    letter-spacing: 0%; */
 
 
 
 }
-
-
 
 .card-body p {
-
-    /* font-size: 0.85rem;
-
-    color: #b3b3b3;
-
-    line-height: 1.5;
-
-    max-width: 250px; */
-
-
-
-    margin-bottom: 15px;
-
-    font-family: Poppins;
-
-    font-weight: 500;
-
-    font-style: Medium;
-
+    margin-bottom: 20px;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 400;
     font-size: 8px;
-
-    line-height: 10.5px;
-
-    letter-spacing: 0%;
-
-
-
-
-
-
-
+    /* Increased from 8px to match readability in design */
+    line-height: 1.5;
+    color: #b3b3b3;
+    /* Dimmed text for hierarchy */
 }
-
-
 
 /* Button Styling */
-
 .btn-outline {
-
-    display: inline-block;
-
-    padding: 8px 24px;
-
-    /* border: 1px solid rgba(255, 255, 255, 0.3); */
-
-    border-radius: 8px;
-
+    /* display: inline-block; */
+    padding: 7px 22px;
+    border: 1.5px solid #9024F2;
+    border-radius: 10px;
     color: #fff;
-
     text-decoration: none;
-
-    /* font-size: 0.75rem; */
-
-    /* font-weight: 500; */
-
-    /* letter-spacing: 0.5px; */
-
-    transition: all 0.3s ease;
-
-
-
-
-
-
-
-    border: 1px solid #9024F2;
-
-
-
-
-
-    font-family: Poppins;
-
+    font-family: 'Poppins', sans-serif;
     font-weight: 500;
-
-    font-style: Medium;
-
     font-size: 10px;
-
-
-
-    line-height: 15px;
-
-    letter-spacing: 0px;
-
-    text-align: center;
-
-
-
-
-
-
-
-
-
+    text-transform: uppercase;
+    letter-spacing: 0.5px;
+    transition: all 0.3s ease;
+    max-height: 33px;
+    max-width: 119px;
 }
-
-
 
 .btn-outline:hover {
-
-    background: #fff;
-
-    color: #0a0514;
-
+    background: #9024F2;
+    color: #fff;
+    box-shadow: 0 0 15px rgba(144, 36, 242, 0.5);
 }
 
-
-
-/* The Central Background Glow */
-
+/* Background Glow Fix */
 .bg-glow {
-
     position: absolute;
-
     top: 50%;
-
     left: 50%;
-
     transform: translate(-50%, -50%);
-
-    width: 400px;
-
-    height: 400px;
-
-    background: radial-gradient(circle, rgba(125, 51, 255, 0.2) 0%, rgba(10, 5, 20, 0) 70%);
-
+    width: 500px;
+    height: 500px;
+    background: radial-gradient(circle, rgba(144, 36, 242, 0.15) 0%, rgba(26, 11, 46, 0) 70%);
     pointer-events: none;
-
     z-index: 1;
-
 }
-
-
 
 /* <!-- Recruitment Section --> */
 
-.recruitment-section {
 
-    position: relative;
 
-    padding: 100px 15%;
-
+.recruitment {
+    padding: 120px 0;
     text-align: center;
+}
 
-    background-color: var(--bg-color);
+.recruitment h2 {
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 80px;
 
-    overflow: hidden;
+    font-family: Preahvihear;
+
+
+}
+
+.recruitment h2 span {
+ color: #A362FF;
+;
+
+}
+
+/* ===== VISUAL CORE ===== */
+
+.visual {
+    position: relative;
+    height: 520px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* ===== CENTER ORB ===== */
+
+.core {
+    position: absolute;
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+    background: radial-gradient(circle,
+            rgba(160, 120, 255, 0.9),
+            rgba(80, 30, 180, 0.9));
+    display: grid;
+    place-items: center;
+    font-size: 48px;
+    box-shadow:
+        0 0 20px rgba(125, 51, 255, 0.5),
+        0 0 80px rgba(125, 51, 255, 0.6),
+        0 0 140px rgba(125, 51, 255, 0.3);
+
+
+
+
+    /* position: absolute;
+    width: 180px;
+    height: 180px; */
+    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
 
 }
 
 
-
-.recruitment-header h2 {
-
-    /* font-size: 1.5rem; */
-
-    /* font-weight: 300; */
-
-    margin-bottom: 40px;
+.core img {
+    width: 60px;
+    height: 90px;
 
 
+}
+
+/* ===== ORBITS ===== */
+
+.orbit {
+    position: absolute;
+    z-index: 15;
+    width: 520px;
+    height: 520px;
+    border-radius: 50%;
+    border: 2px solid rgba(125, 51, 255, 0.2);
+    transform: scaleY(0.35);
+    animation: spin linear infinite;
+    margin-top: 150px;
+}
+
+
+.under-orbit-1 {
+    position: absolute;
+    z-index: 15;
+    width: 120px;
+    height: 120px;
+    border-radius: 50%;
+    border: 2px solid rgba(125, 51, 255, 0.2);
+    /* Combined transform to keep the flat 'orbit' look */
+    transform: scaleY(0.35) rotate(0deg);
+    animation: spin-orbit 16s steps(8) infinite;
+    margin-top: 180px;
+}
+
+.under-orbit-2 {
+    position: absolute;
+    z-index: 15;
+    width: 120px;
+    height: 180px;
+    border-radius: 50%;
+    border: 2px solid rgba(125, 51, 255, 0.2);
+    transform: scaleY(0.35) rotate(0deg);
+    /* Reversed direction or different speed for visual depth */
+    animation: spin-orbit 20s ease-in-out infinite;
+    margin-top: 180px;
+}
+
+@keyframes spin-orbit {
+    from {
+        transform: scaleY(0.35) rotate(0deg);
+    }
+
+    to {
+        transform: scaleY(0.35) rotate(360deg);
+    }
+}
 
 
 
-    font-family: Preahvihear;
-
-    font-weight: 400;
-
-    font-style: Regular;
-
-    font-size: 24px;
-
-
-
-    line-height: 31px;
-
-    letter-spacing: 2%;
-
-    text-align: center;
-
-    vertical-align: middle;
+.orbit-1 {
+    animation-duration: 20s;
+    width: 695px;
+    height: 269px;
+    box-sizing: border-box;
+    position: absolute;
 
 
 
 
+}
+
+.orbit-2 {
+    animation-duration: 30s;
+    width: 764px;
+    height: 269px;
+    box-sizing: border-box;
+    position: absolute;
+
+}
+
+.orbit-3 {
+    animation-duration: 40s;
+    width: 881px;
+    height: 269px;
+    box-sizing: border-box;
+    position: absolute;
+
+}
+
+/* ===== ICONS ===== */
+
+.icon {
+    position: absolute;
+    width: 26px;
+    height: 26px;
+    border: 1px solid rgba(125, 51, 255, 0.6);
+    border-radius: 6px;
+    display: grid;
+    place-items: center;
+    font-size: 10px;
+    background: #0b0615;
+    animation: counterSpin linear infinite;
+}
+
+.orbit-1 .icon {
+    animation-duration: 20s;
+}
+
+.orbit-2 .icon {
+    animation-duration: 30s;
+}
+
+.orbit-3 .icon {
+    animation-duration: 40s;
+}
+
+.icon {
+    background: none;
+    width: 13px;
+    height: 20.33px;
+}
 
 
 
+/* Positions */
+.i1 {
+    top: -10px;
+    left: 50%;
+}
 
+.i2 {
+    bottom: 0;
+    left: 15%;
+}
 
+.i3 {
+    bottom: 0;
+    right: 15%;
+}
 
+.i4 {
+    top: 10%;
+    left: 5%;
+}
 
+.i5 {
+    top: 10%;
+    right: 5%;
+}
+
+.i6 {
+    bottom: 10%;
+    left: 20%;
+}
+
+.i7 {
+    bottom: 10%;
+    right: 20%;
+}
+
+.i8 {
+    left: -10px;
+    top: 50%;
+}
+
+.i9 {
+    right: -10px;
+    top: 50%;
+}
+
+/* ===== ANIMATIONS ===== */
+
+@keyframes spin {
+    to {
+        transform: scaleY(0.35) rotate(360deg);
+    }
+}
+
+@keyframes counterSpin {
+    to {
+        transform: rotate(-360deg);
+    }
 }
 
 
@@ -1136,19 +1495,7 @@ nav ul li a {
 
     border: 1px solid rgba(255, 255, 255, 0.1);
 
-
-
-
-
-
-
-
-
-
-
 }
-
-
 
 .icon-circle img {
 
@@ -1158,574 +1505,27 @@ nav ul li a {
 
 }
 
-
-
-/* Connection Lines */
-
-.connection-lines {
-
+.connections {
     position: absolute;
-
-    top: 120px;
-
-    left: auto;
-
-
-
+    top: -70px;
+    left: 50%;
     transform: translateX(-50%);
-
-    transform: translateY(-50%);
-
-    width: 100%;
-
-    max-width: 800px;
-
-    height: 250px;
-
+    width: 700px;
+    height: 360px;
+    pointer-events: none;
     z-index: -1;
-
-    pointer-events: none;
-
 }
 
 
 
-/* Visual Core & Orbits */
-
-.visual-core {
-
-    position: relative;
-
-    height: 500px;
-
-    display: flex;
-
-
-
-    justify-content: center;
-
-    align-items: center;
-
-    perspective: 1000px;
-
+.connections path {
+    fill: none;
+    stroke: url(#fadePurple);
+    stroke-width: 1;
+    /* background: linear-gradient(10.49deg, #130428 19.95%, #251043 67.64%, #38126D 107.08%, #261045 156.61%, #190634 183.21%); */
 }
 
-
-
-.orbit-container {
-
-    position: relative;
-
-    width: 600px;
-
-    height: 300px;
-
-    transform-style: preserve-3d;
-
-}
-
-
-
-.ring {
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%) rotateX(75deg);
-
-    border: 1px solid rgba(125, 51, 255, 0.4);
-
-    border-radius: 50%;
-
-}
-
-
-
-.ring-1 {
-
-    width: 300px;
-
-    height: 300px;
-
-}
-
-
-
-.ring-2 {
-
-    width: 450px;
-
-    height: 450px;
-
-    border-color: rgba(125, 51, 255, 0.2);
-
-}
-
-
-
-.ring-3 {
-
-    width: 600px;
-
-    height: 600px;
-
-    border-color: rgba(125, 51, 255, 0.1);
-
-}
-
-
-
-/* The Central Glowing Orb */
-
-.main-orb {
-
-    position: absolute;
-
-    top: 50%;
-
-    left: 50%;
-
-    transform: translate(-50%, -50%);
-
-    width: 120px;
-
-    height: 120px;
-
-    /* background: #7d33ff; */
-
-    border-radius: 50%;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    box-shadow: 0 0 60px rgba(125, 51, 255, 0.8);
-
-    z-index: 10;
-
-
-
-
-
-    background: linear-gradient(180deg, rgba(48, 16, 128, 0.6) 0%, rgba(120, 64, 173, 0.36) 100%);
-
-
-
-
-
-}
-
-
-
-.logo-inner {
-
-    font-size: 3rem;
-
-    color: white;
-
-    font-weight: bold;
-
-
-
-
-
-
-
-}
-
-
-
-
-
-/* Ring with icons */
-
-
-
-/* Base Icon Styling */
-
-
-
-/* --- 3D Floating Icons CSS --- */
-
-
-
-
-
-/* .ring-icon {
-
-    position: absolute;
-
-    width: 24px;
-
-    height: 24px; */
-
-/* background: #0a0514; */
-
-/* Matches background */
-
-/* border: 1px solid rgba(125, 51, 255, 0.3); */
-
-/* border-radius: 4px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center; */
-
-/* padding: 4px; */
-
-/* Important: This counters the 75deg tilt of the ring to keep icons upright */
-
-/* transform: translate(-50%, -50%) rotateX(-75deg); */
-
-
-
-/* } */
-
-
-
-.ring-icon {
-
-    position: absolute;
-
-    width: 25px;
-
-    height: 29px;
-
-    padding: 6px;
-
-    display: flex;
-
-    align-items: center;
-
-    justify-content: center;
-
-    background: transparent;
-
-    border-radius: 6px;
-
-
-
-    /* 1. PHYSICAL THICKNESS (The "Extrusion") */
-
-    /* We stack multiple 1px shadows to create a solid side wall */
-
-    /* box-shadow:
-
-        1px 1px 0px #3d2b5e,
-
-        2px 2px 0px #3d2b5e,
-
-        3px 3px 0px #3d2b5e,
-
-        4px 4px 15px rgba(0, 0, 0, 0.8); */
-
-    /* The final soft shadow */
-
-
-
-    /* 2. 3D POSITIONING */
-
-    /* We tilt it on two axes (X and Y) so the viewer can see the 'side' thickness we just created */
-
-    /* transform: translate(-50%, -50%) rotateX(-55deg) rotateY(-5deg); */
-
-
-
-    border: 1px solid rgba(125, 51, 255, 0.6);
-
-    /* transform-style: preserve-3d; */
-
-    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
-
-}
-
-
-
-/* 3. THE FLOOR SHADOW */
-
-/* This creates a shadow on the ring line itself, making it look like it's floating ABOVE the ring */
-
-.ring-icon::after {
-
-    content: "";
-
-    position: absolute;
-
-    top: 40px;
-
-    /* Distance from the icon to the ring */
-
-    left: 50%;
-
-    transform: translateX(-50%) rotateX(90deg);
-
-    width: 20px;
-
-    height: 10px;
-
-    background: rgba(0, 0, 0, 0.6);
-
-    filter: blur(4px);
-
-    border-radius: 50%;
-
-    pointer-events: none;
-
-}
-
-
-
-/* 4. ICON GLOW */
-
-.ring-icon img {
-
-    width: 100%;
-
-    height: auto;
-
-    object-fit: cover;
-
-    background: transparent;
-
-    /* filter: drop-shadow(0 0 5px rgba(125, 51, 255, 0.5)); */
-
-}
-
-
-
-/* 5. INTERACTIVE HOVER */
-
-.ring-icon:hover {
-
-    /* When you hover, the icon "jumps" higher and the shadow stays on the ring */
-
-    transform: translate(-30%, -50%) rotateX(-45deg) rotateY(20deg) scale(1.2);
-
-    box-shadow:
-
-        1px 1px 0px #7d33ff,
-
-        2px 2px 0px #7d33ff,
-
-        3px 3px 0px #7d33ff,
-
-        4px 4px 25px rgba(125, 51, 255, 0.4);
-
-}
-
-
-
-/* Specific Positions (Distribution) */
-
-/* Ring 1 Positions */
-
-.ring-1 .pos-1 {
-
-    top: 0%;
-
-    left: 50%;
-
-}
-
-
-
-.ring-1 .pos-2 {
-
-    top: 80%;
-
-    left: 20%;
-
-}
-
-
-
-.ring-1 .pos-3 {
-
-    top: 80%;
-
-    left: 80%;
-
-}
-
-
-
-/* Ring 2 Positions */
-
-.ring-2 .pos-4 {
-
-    top: 20%;
-
-    left: 10%;
-
-}
-
-
-
-.ring-2 .pos-5 {
-
-    top: 20%;
-
-    left: 90%;
-
-}
-
-
-
-.ring-2 .pos-6 {
-
-    top: 90%;
-
-    left: 30%;
-
-}
-
-
-
-.ring-2 .pos-7 {
-
-    top: 90%;
-
-    left: 70%;
-
-}
-
-
-
-/* Ring 3 Positions */
-
-.ring-3 .pos-8 {
-
-    top: 50%;
-
-    left: -2%;
-
-}
-
-
-
-.ring-3 .pos-9 {
-
-    top: 50%;
-
-    left: 102%;
-
-}
-
-
-
-.ring-3 .pos-10 {
-
-    top: 10%;
-
-    left: 50%;
-
-}
-
-
-
-/* Animation: Slow Rotation */
-
-@keyframes orbitalRotate {
-
-    from {
-
-        transform: translate(-50%, -50%) rotateX(75deg) rotateZ(0deg);
-
-    }
-
-
-
-    to {
-
-        transform: translate(-50%, -50%) rotateX(75deg) rotateZ(360deg);
-
-    }
-
-}
-
-
-
-/* Optional: Apply to rings for a live effect */
-
-.ring-1 {
-
-    animation: orbitalRotate 20s linear infinite;
-
-}
-
-
-
-.ring-2 {
-
-    animation: orbitalRotate 30s linear infinite reverse;
-
-}
-
-
-
-.ring-3 {
-
-    animation: orbitalRotate 40s linear infinite;
-
-}
-
-
-
-/* Keep icons from spinning with the ring if using animation */
-
-.ring-icon {
-
-    /* If animating, icons need an inverse spin to stay upright */
-
-    /* This requires a more complex nested div structure */
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-/* Animations */
-
-@keyframes blink {
-
-
-
-    0%,
-
-    100% {
-
-        opacity: 1;
-
-    }
-
-
-
-    50% {
-
-        opacity: 0;
-
-    }
-
-}
-
-
-
+/* Ellipse 20 */
 
 
 
@@ -1906,13 +1706,14 @@ nav ul li a {
 
 .project-card-desc {
 
-    background: rgba(23, 11, 46, 0.7);
-
+    background: rgba(23, 11, 46, 0.6);
+    /* max-width: 669px; */
+    /* height: 165px; */
     /* Darker purple-tinted base */
 
     backdrop-filter: blur(12px);
 
-    padding: 25px;
+
 
     border-radius: 12px;
 
@@ -1920,7 +1721,17 @@ nav ul li a {
 
     box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
 
+
+
+
+
+
+
+
 }
+
+
+
 
 
 
@@ -1948,11 +1759,21 @@ nav ul li a {
 
     color: #CCD6F6;
 
-    line-height: 100%;
+    /* line-height: 100%; */
 
-    letter-spacing: 0%;
+    /* letter-spacing: 0%; */
+    max-width: 590px;
+    padding: 20px;
 
-
+    /* 
+    font-family: Poppins;
+font-weight: 500;
+font-style: Medium;
+font-size: 18px;
+leading-trim: NONE;
+line-height: 100%;
+letter-spacing: 0%;
+vertical-align: middle; */
 
 
 
@@ -2092,7 +1913,7 @@ nav ul li a {
 
 .contact-content {
 
-    max-width: 600px;
+    max-width: 703px;
 
     /* Matches the narrow width in the design */
 
@@ -2126,7 +1947,7 @@ nav ul li a {
 
     /* color: #FFFFFF; */
 
-    line-height: 100%;
+    /* line-height: 100%; */
 
     letter-spacing: 2%;
 
@@ -2473,6 +2294,28 @@ nav ul li a {
     }
 
     .contact-desc {
-    text-align: center;
+        text-align: center;
+    }
 }
+
+@keyframes blink {
+
+
+
+    0%,
+
+    100% {
+
+        opacity: 1;
+
+    }
+
+
+
+    50% {
+
+        opacity: 0;
+
+    }
+
 }
