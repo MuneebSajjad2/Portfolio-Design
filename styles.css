@@ -2550,7 +2550,7 @@ vertical-align: middle; */
      GLOBAL SPACING FIX
   ======================== */
     .hero {
-        padding: 40px 20px 60px;
+        padding: 0px 20px 60px;
     }
 
     .hero-top,
@@ -2610,9 +2610,7 @@ vertical-align: middle; */
     /* ========================
      HEADLINE FIX
   ======================== */
-    .headline-box {
-        margin-top: 10px;
-    }
+   
 
     .headline-box h1 {
         font-size: 22px;
