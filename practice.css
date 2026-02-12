@@ -1,0 +1,72 @@
+@media (max-device-width: 420px) {
+
+    .headline-box h1,
+    .typing-text {
+        font-size: 20px;
+    }
+
+    .avatar-container {
+        width: 150px;
+    }
+
+    .card-body h3 {
+        font-size: 16px;
+    }
+
+    .btn-outline {
+        font-size: 9px;
+        padding: 6px 14px;
+    }
+
+    .project-title {
+        font-size: 18px;
+    }
+
+    .project-card-desc p {
+        font-size: 13px;
+    }
+
+    .core {
+        width: 80px;
+        height: 80px;
+    }
+
+    .hero-bottom {
+        padding: 0px 5%;
+    }
+
+
+    .icon-circle {
+        width: 35px;
+        height: 35px;
+    }
+
+    .orbit-1 {
+        width: 305px
+    }
+
+    .orbit-2 {
+        width: 384px
+    }
+
+    .orbit-3 {
+        width: 491px
+    }
+
+
+    .role {
+        display: inline-block;
+        font-size: 13px;
+        
+    }
+    .fb-link {
+        padding: 5px 0px;
+
+    }
+
+
+}
+
+
+
+
